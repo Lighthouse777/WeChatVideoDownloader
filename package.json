@@ -14,7 +14,7 @@
     "build-web": "react-app-rewired build",
     "build-electron": "webpack --config webpack.electron.js",
     "build-all": "rm -rf ./build && rm -rf ./build-electron && npm run build-electron && npm run build-web",
-    "pack": "npm run build-all && electron-builder -p never",
+    "pack": "npm run build-all && electron-builder -p always",
     "gen-icon": "electron-icon-builder --input=./public/icon/icon.png --output=./public/icon",
     "pretty": "prettier -c --write \"(src/**/*|electron/**/*)\""
   },
